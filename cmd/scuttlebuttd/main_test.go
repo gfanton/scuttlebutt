@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	main "github.com/benbjohnson/scuttlebutt/cmd/scuttlebuttd"
+	main "github.com/gfanton/scuttlebutt/cmd/scuttlebuttd"
 	"github.com/burntsushi/toml"
 	"github.com/davecgh/go-spew/spew"
 )

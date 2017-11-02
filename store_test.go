@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/benbjohnson/scuttlebutt"
+	"github.com/gfanton/scuttlebutt"
 	"github.com/davecgh/go-spew/spew"
 )
 

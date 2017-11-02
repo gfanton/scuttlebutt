@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/benbjohnson/scuttlebutt"
+	"github.com/gfanton/scuttlebutt"
 	"github.com/kurrik/twittergo"
 )
 

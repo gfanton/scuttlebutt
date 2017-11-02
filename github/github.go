@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"code.google.com/p/goauth2/oauth"
-	"github.com/benbjohnson/scuttlebutt"
+	"github.com/gfanton/scuttlebutt"
 	"github.com/google/go-github/github"
+	"golang.org/x/oauth2"
 )
 
 var (
@@ -25,11 +25,11 @@ type Store struct {
 // NewStore returns a new instance of Store.
 func NewStore(token string) *Store {
 	return &Store{
-		client: github.NewClient(
-			(&oauth.Transport{
-				Token: &oauth.Token{AccessToken: token},
-			}).Client(),
-		),
+		client: github.NewClient(oauth2.NewClient(
+			oauth2.NoContext,
+			oauth2.StaticTokenSource(&oauth2.Token{
+				AccessToken: token,
+			}))),
 	}
 }
 

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/benbjohnson/scuttlebutt/internal"
+	"github.com/gfanton/scuttlebutt/internal"
 	"github.com/boltdb/bolt"
 	"github.com/gogo/protobuf/proto"
 )

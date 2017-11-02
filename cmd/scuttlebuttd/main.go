@@ -13,10 +13,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/benbjohnson/scuttlebutt"
-	"github.com/benbjohnson/scuttlebutt/github"
-	"github.com/benbjohnson/scuttlebutt/twitter"
 	"github.com/burntsushi/toml"
+	"github.com/gfanton/scuttlebutt"
+	"github.com/gfanton/scuttlebutt/github"
+	"github.com/gfanton/scuttlebutt/twitter"
 	"github.com/kurrik/oauth1a"
 	"github.com/kurrik/twittergo"
 )
@@ -168,7 +168,7 @@ func (m *Main) Run() error {
 	// Create a poller & notify monitor.
 	m.wg.Add(2)
 	go m.runPoller()
-	go m.runNotifier()
+	// go m.runNotifier()
 
 	return nil
 }

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/benbjohnson/scuttlebutt"
-	"github.com/benbjohnson/scuttlebutt/twitter"
+	"github.com/gfanton/scuttlebutt"
+	"github.com/gfanton/scuttlebutt/twitter"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/kurrik/twittergo"
 )
